@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import 'colors';
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: rgb(72, 72, 72);
+
+}
+
+h2{
+    text-align: center;
+    text-transform:uppercase;
+    }
+
+
+
+.underline{
+width: 160px;
+height: 4px;
+background-color: $light-peach;
+margin: 0 auto 40px;
+}
+
+.shadow-bg{
+    background-color: rgba(58, 58, 59, 0.8);
+    transition: background-color .6s;
+}
+
+.peach-text{
+color:$light-peach;
+}
+
+.fa-bars{
+    padding: 10px;
+    color:white;
+}
+
+
+nav {
+    text-transform: uppercase;
+    z-index: 2;
+
+    i{
+        color:white;
+    }
+
+
+.navbar-nav {
+	.nav-link {
+		color: white;
+	}
+
+    .nav-link:hover{
+        color:$light-peach;
+    }
+	.nav-link.active {
+		color: $light-peach;
+        font-weight: bold;
+	}
+}
+ 
+.navbar-brand {
+	color: white;
+    font-weight: bold;
+}
+}
+
+header{
+    color: #fff;
+
+    h1{
+        text-transform: uppercase;
+        text-transform: 30px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+.hero-img{
+    position:relative;
+    height:100vh;
+    background-image: url('../img/knightb.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index:0;
+
+.hero-shadow{
+    position:absolute;
+    height:100%;
+	width: 100%;
+	background-color: rgba(58, 58, 59, 0.4);
+    z-index: -1;
+    }
+
+.hero-text{
+display:flex;
+justify-content: center;
+align-items: center;
+height:100%;
+padding: 10px;
+text-align: center;
+flex-direction: column;
+z-index: 1;
+
+ .btn-outline-light{
+    text-transform: uppercase;
+}
+}
+
+.fa-chevron-down{
+    position:absolute;
+    font-size: 20px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:wheat;
+}
+}
+
+.aboutus{
+    i{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+.about-us-card-title{
+    font-size:18px;
+    text-transform: uppercase;
+}
+
+.about-us-card-text{
+    font-size:14px;
+}
+
+.about-us-hover{
+    transition: color .3s;
+}
+.about-us-hover:hover{
+color: $light-peach;
+
+}
+
+}
+
+
+
+.about-us-hero{
+    position:relative;
+    background-image: url('../img/chess.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index:0;
+    color:white;
+
+    .aboutus-shadow{
+        top: 0;
+        position:absolute;
+        height:100%;
+        width: 100%;
+        background-color: rgba(58, 58, 59, 0.4);
+        z-index: -1;
+        }
+
+    i{
+        font-size: 20px;
+    }
+
+
+    .about-us-hero-item{
+        margin: 10px 0;
+
+    }
+}
+
+
+.portfolio{
+    .carousel-item{
+        position:relative;
+        height: 600px;
+    }
+
+    .carousel-caption{
+        position: absolute;
+        background-color: rgba(58, 58, 59, 0.6);
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+    }
+}
+
+.card-group .card{
+    position: relative;
+    .card-img-top{
+        height:60%;
+    }
+}
+
+.prices {
+    .price-box{
+        padding: 30px;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgba(222, 196, 196, 0.4);
+        transition: transform .3s;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        color: $light-peach;
+        text-transform: uppercase;
+    }
+
+    span{
+        font-weight: bold;
+    }
+
+    button{
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    .price-tag {
+        font-size:25px;
+        font-weight: bold;
+    }
+
+    .price-box:hover{
+        transform:scale(1.05);
+    }
+
+    .price-info{
+        margin-top: 20px;
+        a{
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+.team {
+    position: relative;
+    background-image: url('../img/chessboard.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+    h2 {
+        color: rgb(226, 222, 222);
+    }
+
+    .team-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: -1;
+    }
+
+    .card {
+        transition: transform .3s;
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        i {
+            padding: 10px;
+            color:rgb(99, 0, 0);
+        }
+    }
+
+    .card:hover {
+        transform: scale(.96);
+    }
+
+    .card-title {
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .card-body {
+        height: 160px;
+    }
+
+}
+
+.achievements {
+    i {
+        padding: 10px;
+        font-size: 48px;
+        color:rgb(250, 138, 41);
+        text-shadow: 0 0 5px rgb(244, 230, 218);
+    }
+
+    .achievements-list {
+        padding: 20px 0;
+    }
+
+    .achievement-number {
+        font-size: 22px;
+    }
+
+    .achievement-text {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+.contact {
+    position: relative;
+    background-image: url('../img/institute.jpg');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+
+    h2 {
+        color: rgb(236, 236, 236);
+        font-weight: bold;
+    }
+
+    .underline {
+        background-color: rgb(236, 236, 236);
+    }
+
+    .contact-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 9, 27, .85);
+        z-index: -5;
+    }
+
+    .contact-us {
+        display: flex;
+        align-items: center;
+        color: white;
+
+        .contact-item {
+            margin: 30px 0;
+
+            h3 {
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .social-media {
+                font-size: 26px;
+
+                a {
+                    padding: 10px;
+                    color: white;
+                }
+
+                a:hover {
+                    color: rgb(236, 236, 236);
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px){
+
+}
+
+@media(min-width:375px){
+    header {
+        h1{
+            font-size: 36px;
+        }
+
+        p{
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media(min-width:768px){
+    header {
+        h1{
+            font-size: 42px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+}
+
